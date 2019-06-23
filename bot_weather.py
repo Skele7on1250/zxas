@@ -1,7 +1,7 @@
 import telebot
 import pyowm
-bot = telebot.TeleBot("713393027:AAHwcfUsUx_nOvfzMLrgI0-D2JYopONSwKY")
-owm = pyowm.OWM('b60d8f4b900b4ebda7083fbd48264572', language = "ru")
+bot = telebot.TeleBot("API")
+owm = pyowm.OWM('API', language = "ru")
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.send_message(message.chat.id, "Здраствуй, я великая  Бабушка Маланья, я могу определить погоду в любом городе. Напиши мне название города и сами убедитесь")
