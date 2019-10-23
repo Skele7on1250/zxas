@@ -1,6 +1,6 @@
 import telebot
 import pyowm
-bot = telebot.TeleBot("API")
+bot = telebot.TeleBot("713393027:AAHwcfUsUx_nOvfzMLrgI0-D2JYopONSwKY")
 owm = pyowm.OWM('API', language = "ru")
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
